@@ -24,7 +24,7 @@ def main():
 
     print("X and Y:",X&Y)
     print("X or Y:", X|Y)
-    print("X complement Y:", X^Y)
+    print("X complement Y:", X-Y)
 
 if __name__ == '__main__':
     main()

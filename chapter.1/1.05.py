@@ -9,11 +9,11 @@ def n_gram(s_list, n):
         return [s_list]
     gram = s_list[:n]
     for i in range(n, len(s_list)):
-        res.append(gram)
+        res.append(tuple(gram))
         gram = gram[1:]
         gram.append(s_list[i])
-    res.append(gram)
-    return res
+    res.append(tuple(gram))
+    return tuple(res)
 
 def main():
     s = "I am an NLPer"
